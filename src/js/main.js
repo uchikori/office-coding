@@ -12,7 +12,15 @@ let mySwiper = new Swiper('.main-visual__swiper',{
     navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
-	}
+	},
+    pagination:{
+        el:'.swiper-pagination',
+        type:'fraction',
+        clickable:false,
+        renderFraction: function(currentClass, totalClass){
+            return '0'+'<span class="'+currentClass+'"></span>'+'<span class="swiper-pagination-border"></span>'+'0'+'<span class="'+totalClass+'"></span>';
+        }
+    }
 });
 let mySwiper02 = new Swiper('.text-place-swiper02',{
     loop:true,

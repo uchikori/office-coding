@@ -1,0 +1,45 @@
+.news{
+    width: 98rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 0 3.2rem 0 2.4rem;
+    background-color:rgba(245,245,245,0.7);
+    position: absolute;
+    bottom: 0%;
+    left: 6.9%;
+    z-index: 10;
+    &__head{
+        @include font-style(3.2rem, $color-black, 700);
+        text-transform: uppercase;
+        line-height: 1;
+        margin-right: 8rem;
+    }
+    &__time{
+        @include font-style(1.6rem, $color-black, 500);
+        letter-spacing: 0;
+        line-height: 1;
+        margin-right: 4rem;
+    }
+    &__title{
+        @include font-style(1.4rem, $color-black, 300);
+        letter-spacing: 0;
+        line-height: 1;
+        width: 100%;
+        display: flex;
+        transition: color 0.3s ease;
+        &:hover{
+            transition: color 0.3s ease;
+            color: $color-link;
+            .news__link{
+                transform: translateX(20%);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+    &__link{
+        margin-left: auto;
+        transform: translateX(0%);
+        transition: transform 0.3s ease;
+    }
+}

@@ -202,7 +202,7 @@
   */
 }
 .swiper-pagination {
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
@@ -215,9 +215,9 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
+  /* bottom: 10px; */
+  /* left: 0; */
+  /* width: 100%; */
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {

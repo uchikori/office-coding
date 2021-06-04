@@ -14,114 +14,190 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__inner container">
-      <h1 class="header__logo">Reqree</h1>
-      <ul class="header__global-navi">
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            about
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            service
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            project
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            column
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            company
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link">
-            recruit
-          </a>
-        </li>
-        <li class="header__navi-item">
-          <a href="/" class="header__link header__cta">
-            contact
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </header>
-  <div class="main-visual">
-    <div class="main-visual__swiper">
-      <div class="swiper-wrapper">
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual.jpg" alt="THE PLACE">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual02.jpg" alt="EPISODE">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual03.jpg" alt="リーガルBLD　半蔵門">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual04.jpg" alt="REALIZE KOBE">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual05.jpg" alt="THE LINKS">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual06.jpg" alt="リーガルBLD　堺筋本町">
-        </figure>
-        <figure class="main-visual__image swiper-slide">
-          <img src="dist/images/main-visual07.jpg" alt="リーガルBLD　麹町">
-        </figure>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner container">
+        <h1 class="header__logo">Reqree</h1>
+        <ul class="header__global-navi">
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              about
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              service
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              project
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              column
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              company
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link">
+              recruit
+            </a>
+          </li>
+          <li class="header__navi-item">
+            <a href="/" class="header__link header__cta">
+              contact
+            </a>
+          </li>
+          
+        </ul>
       </div>
-      <div class="next-prev">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+    </header><!-- /header -->
 
-    </div>
-    <div class="main-visual-contents container">
-      <div class="main-visual-contents__glass">
-        <div class="main-visual-contents__place text-place-swiper02">
-          <div class="main-visual-contents__place__wrap swiper-wrapper">
-            <div class="main-visual-contents__place__name swiper-slide">
-              the place
+    <!-- main-visual -->
+    <div class="main-visual">
+      <div class="main-visual__swiper">
+        <div class="swiper-wrapper">
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual.jpg" alt="THE PLACE">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual02.jpg" alt="EPISODE">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual03.jpg" alt="リーガルBLD　半蔵門">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual04.jpg" alt="REALIZE KOBE">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual05.jpg" alt="THE LINKS">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual06.jpg" alt="リーガルBLD　堺筋本町">
+          </figure>
+          <figure class="main-visual__image swiper-slide">
+            <img src="dist/images/main-visual07.jpg" alt="リーガルBLD　麹町">
+          </figure>
+        </div>
+        <div class="next-prev-pagination">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        
+      </div>
+      <div class="main-visual__container container">
+        <div class="main-text">
+          <div class="main-text__place text-place-swiper02">
+            <div class="main-text__place__wrap swiper-wrapper">
+              <div class="main-text__place__name swiper-slide">
+                the place
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                episode
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                リーガルBLD 半蔵門
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                realize kobe
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                the links
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                リーガルBLD 堺筋本町
+              </div>
+              <div class="main-text__place__name swiper-slide">
+                リーガルBLD 麴町
+              </div>
             </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              episode
+          </div>
+          <h2 class="main-text__copy">
+            creating for<br>business future
+          </h2>
+        </div>
+      </div>
+      <div class="news">
+        <h2 class="news__head">news</h2>
+        <div class="news__time">2021/12/31</div>
+        <a href="/" class="news__title">
+          サービスの営業日及び営業時間変更のお知らせ
+          <span class="news__link link-icon"><img src="dist/images/arrow-line.png" alt="記事を読む"></span>
+        </a>
+      </div>
+  
+    </div><!-- /main-visual -->
+
+    <!-- marquee -->
+    <div class="marquee">
+      <div class="marquee__anim">
+        <div class="marquee__inline">
+          We will analyze changes in the trends of the times not only in terms of technology but also in terms of people's values, 
+        </div>
+        <div class="marquee__inline">
+          We will analyze changes in the trends of the times not only in terms of technology but also in terms of people's values, 
+        </div>
+      </div>
+      <div class="marquee__anim">
+        <div class="marquee__inline">
+          and grasp the future trends of society over the medium to long term.
+        </div>
+        <div class="marquee__inline">
+          and grasp the future trends of society over the medium to long term.
+        </div>
+      </div>
+    </div><!-- /marquee -->
+
+    <!-- about -->
+    <section class="about">
+      <div class="about__inner container">
+        <h2 class="about__title">
+          <span class="about__title--en">about us</span>
+          
+          <span class="about__title--ja">私たちについて</span>
+        </h2>
+        <div class="about__media ly-media">
+          <div class="about__media-text">
+            <h3 class="about__sub-title">
+              人の可能性を最大化するこれからの時代に最適なオフィスを
+              創造し続け社会に役立つ公器たる永続的企業体を目指す
+            </h3>
+            <p class="about__text">
+              シェオアフィス・コワーキングスペースの企画コンサルティングから
+              運営代行までトータルプロデュース。
+              <br>
+              数々のプロジェクトで培ったノウハウに基づき、立地や形状に最適なワークスペースをご提案。
+              <br>
+              厳正なる選考と充実したOJT を終えたコミュニティマネージャーがホスピタリティ溢れる空間を演出します。
+            </p>
+            <a href="/" class="link-btn ly-link-btn">
+              <span class="link-btn__text">View More</span>
+              <span class="link-btn__icon link-icon-ptn2"><img src="dist/images/arrow-line-ptn2.png" alt="記事を読む"></span>
+            </a>
+          </div>
+          <div class="about__media-image">
+            <div class="about__media-imageMain">
+              <img src="dist/images/about-image01.png" alt="Reqreeエントランス">
             </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              リーガルBLD 半蔵門
-            </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              realize kobe
-            </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              the links
-            </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              リーガルBLD 堺筋本町
-            </div>
-            <div class="main-visual-contents__place__name swiper-slide">
-              リーガルBLD 麴町
+            <div class="about__media-imageSub">
+              <img src="dist/images/about-image02.jpg" alt="社内風景">
             </div>
           </div>
         </div>
-        <h2 class="main-visual-contents__copy">
-          creating for<br>business future
-        </h2>
+        
       </div>
-    </div>
-
+     
+    </section><!-- /about -->
   </div>
+  
  
 <!-- Swiper読み込み -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

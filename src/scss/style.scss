@@ -39,6 +39,9 @@ img{
 a{
     
 }
+.wrapper{
+    overflow-x: hidden;
+}
 .container{
     width: 1648px;
     margin: 0 auto;
@@ -47,121 +50,195 @@ a{
 //-------------------------------
 //  header
 //-------------------------------
-.header{
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    &__inner{
-        display: flex;
-        height: 11rem;
-        align-items: center;
-    }
-    &__logo{
-        @include font-style(4.8rem, $color-white, bold);
-        font-family: $font-mincho;
-        letter-spacing: 0.1em;
-    }
-    &__global-navi{
-        margin-left: auto;
-        display: flex;
-        position: absolute;
-        right: 0;
-    }
-    &__navi-item{
-        margin-right: 4.1rem;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-    &__link{
-        @include font-style(1.6rem, $color-white, 300);
-        text-transform: uppercase;
-    }
-    &__cta{
-        padding: 4.5rem 7.6rem;
-        background-color: $color-link;
-    }
-}
-
+@import 'components/_header.scss';
 
 //-------------------------------
 //  main-text
 //-------------------------------
-.main-visual{
+@import 'components/_main-visual.scss';
+@import 'components/_main-text.scss';
+
+//-------------------------------
+//  news
+//-------------------------------
+@import 'components/_news.scss';
+
+//-------------------------------
+//  link-icon
+//-------------------------------
+.link-icon{
+    display: inline-block;
+    width: 4.8rem;
+    height: 1.1rem;
     position: relative;
-    width: 100%;
-    height: 98rem;
-    &__swiper{
-        width: 100%;
-        height: 100%;
-    }
-    .next-prev{
+    &:before{
+        content: '';
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: solid 1px $color-black;
         position: absolute;
-        right: 0;
-        bottom: 0;
-        display: flex;
-    }
-    .swiper-button-prev, .swiper-button-next{
-        width: 10rem;
-        height: 10rem;
-        background-color: $color-black;
-        &:hover{
-            background-color: $color-link;
-        }
-        &:after{
-            color: $color-white;
-        }
-    }
-    .swiper-button-prev{
-        margin-right: 1.6rem;
+        top: -100%;
+        left: 24%;
     }
 }
-.main-visual-contents{
-    position: absolute;
-    top: 50%;
-    left: 6.9%;
-    transform: translateY(-50%);
-    z-index: 10;
-    &__glass{
-        position: relative;
-        width: 70rem;
-        height: 56rem;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        border-radius: 0px;
-        backdrop-filter: blur(16px);
-        background-color: rgba(255,255,255, 0.3);
-        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-        border: 2px rgba(255,255,255,0.4) solid;
-        border-bottom: 2px rgba(40,40,40,0.35) solid;
-        border-right: 2px rgba(40,40,40,0.35) solid;
-    }
-    &__place{
+.link-icon-ptn2{
+    display: inline-block;
+    width: 4.8rem;
+    height: 1.1rem;
+    position: relative;
+    &:before{
+        content: '';
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: solid 1px $color-link;
         position: absolute;
+        top: -100%;
+        left: 24%;
+    }
+}
+
+//-------------------------------
+//  marquee
+//-------------------------------
+@import 'components/_marquee.scss';
+
+//-------------------------------
+//  about
+//-------------------------------
+.about{
+    &__title{
+        position: relative;
+        display: inline-block;
+        &:after{
+            content: '';
+            width: 100%;
+            height: 8px;
+            background-color: $color-link;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -26%;
+            transform: skew(-16deg)
+        }
+        &--en{
+            @include font-style(6.4rem, $color-link, 700);
+            display: block;
+            opacity: 0.46;
+            transform: skew(-8deg);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+        &--ja{
+            @include font-style(2rem, $color-black, 700);
+            letter-spacing: 0.1em;
+            padding-left: 1.6rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__media{
+        display: flex;
+        margin-top: 7.8rem;
+        &-image{
+            position: absolute;
+            right: 0;
+        }
+        &-imageMain{
+            width: 94.4rem;
+            height: 80rem;
+        }
+        &-imageSub{
+            width: 38.4rem;
+            height: 28rem;
+            position: absolute;
+            right: 0;
+            top: -18%;
+        }
+    }
+    &__sub-title{
+        @include font-style(2.8rem, $color-black, 700);
+        line-height: 2;
+        max-width: 83.1rem;
+        margin-bottom: 12.8rem;
+    }
+    &__text{
+        @include font-style(1.8rem, $color-black, 500);
+        line-height: 3;
+        max-width: 66.8rem;
+    }
+}
+
+//-------------------------------
+// link-btn
+//-------------------------------
+.link-btn{
+    display: block;
+    width: 38.8rem;
+    height: 6.4rem;
+    text-align: center;
+    border: solid 1px $color-link;
+    padding: 0 2.8rem;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    &__text{
+        @include font-style(1.8rem, $color-link, 500);
+        transform: skew(-8deg);
+        display: inline-block;
+        line-height: 6.4rem;
+        transition: color 0.3s ease;
+    }
+    &__icon{
+        margin-right: 0;
+        position: absolute;
+        top: 50%;
+        right: 8%;
+        transform: translateY(-50%);
+        margin-left: auto;
+        transition: filter 0.3s ease;
+        img{
+            transition: transform 0.3s ease;
+        }
+    }
+    &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
         left: 0;
-        top: 11%;
-        overflow-x: hidden;
-        max-width: 48rem
-    }
-    &__place__name{
-        @include font-style(3.2rem, $color-white, 700);
-        text-transform: uppercase;
-        display: block;
-        padding: 1.3rem 2.6rem;
-        letter-spacing: 0.1em;
+        height: 100%;
+        width: 0;
         background-color: $color-black;
+        z-index: -1;
+        transition: width 0.2s ease;
     }
-    &__copy{
-        @include font-style(6.4rem, $color-white, normal);
-        font-family: $font-main;
-        line-height: 1.5;
-        text-transform: uppercase;
-        text-shadow: 1px 0 1.3rem rgba(0, 0, 0, 0.32);
-        display: block;
+    &:hover{
+        &:before{
+            transition: width 0.2s ease;
+            width: 100%;
+        }
+        .link-btn__text{
+            color: $color-white;
+            transition: color 0.3s ease;
+        }
+        .link-btn__icon{
+            filter: brightness(900%);
+            transition: filter 0.3s ease;
+            img{
+                transform: translateX(40%);
+                transition: transform 0.3s ease;
+            }
+        }
     }
+    
+}
+.ly-link-btn{
+    margin-top: 6.4rem;
 }

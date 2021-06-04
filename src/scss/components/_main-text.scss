@@ -1,0 +1,40 @@
+.main-text{
+    position: relative;
+    width: 70rem;
+    height: 56rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px;
+    backdrop-filter: blur(16px);
+    background-color: rgba(255,255,255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    &__place{
+        position: absolute;
+        left: 0;
+        top: 11%;
+        overflow-x: hidden;
+        max-width: 48rem
+    }
+    &__place__name{
+        @include font-style(3.2rem, $color-white, 700);
+        text-transform: uppercase;
+        display: block;
+        padding: 1.3rem 2.6rem;
+        letter-spacing: 0.1em;
+        background-color: $color-black;
+    }
+    &__copy{
+        @include font-style(6.4rem, $color-white, normal);
+        font-family: $font-main;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-shadow: 1px 0 1.3rem rgba(0, 0, 0, 0.32);
+        display: block;
+    }
+}

@@ -16,6 +16,14 @@ var mySwiper = new Swiper('.main-visual__swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    clickable: false,
+    renderFraction: function renderFraction(currentClass, totalClass) {
+      return '0' + '<span class="' + currentClass + '"></span>' + '<span class="swiper-pagination-border"></span>' + '0' + '<span class="' + totalClass + '"></span>';
+    }
   }
 });
 var mySwiper02 = new Swiper('.text-place-swiper02', _defineProperty({

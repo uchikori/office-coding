@@ -15,3 +15,8 @@ git branch
 git add -A
 git commit -m[]
 git push origin firstView
+git add -A
+git cimmit -m[update firstView]
+git commit -m[update firstView]
+git commit -m['update firstView']
+git push origin firstView

@@ -1,0 +1,37 @@
+.header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &__inner{
+        display: flex;
+        height: 11rem;
+        align-items: center;
+    }
+    &__logo{
+        @include font-style(4.8rem, $color-white, bold);
+        font-family: $font-mincho;
+        letter-spacing: 0.1em;
+    }
+    &__global-navi{
+        margin-left: auto;
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    &__navi-item{
+        margin-right: 4.1rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        @include font-style(1.6rem, $color-white, 300);
+        text-transform: uppercase;
+    }
+    &__cta{
+        padding: 4.5rem 7.6rem;
+        background-color: $color-link;
+    }
+}
